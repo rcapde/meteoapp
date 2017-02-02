@@ -1,0 +1,27 @@
+.fcontent{
+  margin-top: 50px;
+  margin-left: 150px;
+}
+.franjes{
+  width:80%;
+  height:600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.fciutat{
+  color:white;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 1em;
+}
+.franjesSlider{
+  width:80%;
+  height:600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

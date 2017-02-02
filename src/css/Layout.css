@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+.Layout{
+  background-color: #ecf0f1;
+}
+.body{
+  background-color: #34495e;
+  width: 100%;
+  min-height: 95vh;
+}
+
+.menu{
+  width: 300px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 50px;
+}
+.active{
+  font-weight: bold;
+  text-decoration: underline;
+}
+.newsfeed{
+  background-color: #ecf0f1;
+}

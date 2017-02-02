@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.card{
+  background-color: white;
+  width:180px;
+  height:280px;
+  font-family: 'Montserrat', sans-serif;
+  color:#333;
+  border-radius: 2px;
+  padding-left: 10px;
+}
+.content{
+  width:100%;
+  height:100%;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+
+}
+.templogo{
+  width:80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ctemp{
+  display: flex;
+  font-size: 2.6em;
+}
+.descripcio{
+  width: 100%;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+.dades{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+.cardrow{
+  width: 85%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
