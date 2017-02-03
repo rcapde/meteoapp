@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { fetchNow } from '../actions/index';
+import * as actions from '../actions/index';
 import '../css/Navbar.css';
 
 class SearchBar extends Component {
@@ -21,6 +21,9 @@ class SearchBar extends Component {
   onFormSubmit(event) {
     event.preventDefault();
     this.props.fetchNow(this.state.term);
+    this.props.fetchFranjes(this.state.term);
+    this.props.fetchPrevisio(this.state.term);
+
 
 
     //this.props.currentWeather(this.state.term);
@@ -40,9 +43,5 @@ class SearchBar extends Component {
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchNow }, dispatch);
-}
 
-
-export default connect(null, mapDispatchToProps)(SearchBar);
+export default connect(null, actions)(SearchBar);

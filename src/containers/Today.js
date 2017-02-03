@@ -9,14 +9,19 @@ class Today extends Component {
     const response = this.props.weather;
     const imatge = `./icons/${response.weather[0].icon}.png`
 
-    console.log(response)
+
     return (
       <div className="Today">
         <div>
           <div><strong> {response.name}, {response.sys.country} </strong></div>
           <div> {dateFormat(new Date(response.dt*1000),"ddd, mmm, d").toString()} </div>
-          <div className="temp"><h1>{Number((response.main.temp).toFixed(0))}º</h1><div className="Imatge"> <img src={imatge} width="150" height="150"/></div> </div>
-          <div>{response.weather[0].description}</div>
+          <div className="temp">
+            <h1>{Number((response.main.temp).toFixed(0))}º</h1>
+            <div className="imatge">
+              <div><img src={imatge} width="150" height="150"/></div>
+              <div className="description"><span>{response.weather[0].description}</span></div>
+            </div>
+          </div>
         </div>
         <div className="table">
           <div className="row"><span>T.Màxima</span><span>{Number((response.main.temp_max).toFixed(0))}º</span></div>

@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .Navbar{
-  background-color: #fff;
+  background-color: #f7f7f7;
   width: 100%;
   height:60px;
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: space-around;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
 
@@ -15,17 +15,23 @@
   padding-left: 50px;
 }
 
-.Navbar div span{
-  padding-left: 50px;
-
-}
 
 .Searchbox{
-  padding-left: 40%;
 }
 .form-control{
   height:38px;
   width:200px;
-  font-size: 1.1em;
+  font-size: 1em;
   padding-left: 15px;
+}
+.menunav{
+  width:30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 20px;
+
+}
+.menunav span{
 }

@@ -37,7 +37,7 @@ class Today extends Component {
     return (
       <div className="Navbar">
         <div><h1>ElTempscat</h1></div>
-        <div><span>Forecasts</span></div>
+        <div className="menunav"><span>Forecasts</span></div>
         <div className="Searchbox">
           <SearchBar />
         </div>

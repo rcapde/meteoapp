@@ -8,26 +8,32 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Router, Route, IndexRoute, hashHistory } from "react-router";
 import { connect } from 'react-redux';
 import dateFormat from 'dateformat';
-import { fetchNow } from '../actions/index';
-import { fetchFranjes } from '../actions/index';
+
 
 import { bindActionCreators } from 'redux';
 import * as actions from '../actions/index';
 
 class App extends Component {
 
-  componentDidMount(){
+  componentWillMount(){
     this.props.fetchNow('Tokyo');
-
+    this.props.fetchFranjes('Tokyo');
   }
 
+
   render() {
+
     if(!this.props.weather){
       return(
         <Franjes />
       );
     }
-    console.log(this.props.franjes)
+    if(!this.props.franjes){
+      return(
+        <Franjes />
+      );
+    }
+
 
 
     return (

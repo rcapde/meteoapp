@@ -1,28 +1,32 @@
 import React, { Component } from 'react';
 import '../css/Franjes.css';
-import Card from '../components/card';
+import LargeCard from '../components/largecard';
 import { connect } from 'react-redux';
-import Slider from 'react-slick';
+import Previsio from './Previsio';
 
 class Franjes extends Component {
 
   render() {
 
     const response = this.props.franjes;
-    console.log(this.props.franjes)
+
+      if(!this.props.franjes){
+        return(
+          <Previsio />
+        );
+      }
+
+      const Lcards = response.list.map((item)=> {
+      return(
+              <LargeCard dt={item.dt_txt} main={item.main} weather={item.weather} />
+            );
+        })
 
     return (
       <div className="fcontent">
-        <div className="fciutat"><span>Barcelona,ES</span></div>
-        <div className="franjesSlider">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        <div className="fciutat"><span>{response.city.name}, {response.city.country}</span></div>
+        <div className="franjes">
+          {Lcards}
         </div>
       </div>
     );
@@ -32,6 +36,7 @@ class Franjes extends Component {
 function mapStateToProps(state) {
   return {
     franjes: state.franjes.data,
+
   };
 }
 
