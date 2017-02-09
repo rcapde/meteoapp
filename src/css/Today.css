@@ -1,17 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-.Today{
+*{
+
+  font-family: 'Montserrat', sans-serif;
+
+}
+.todaycontent{
   font-size: 1em;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding-left: 200px;
-  padding-top: 70px;
-  font-family: 'Montserrat', sans-serif;
+  justify-content: space-between;
   color: white;
   flex-wrap: wrap;
 
-
+}
+.subcontent{
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 200px;
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  flex-wrap: wrap;
 }
 .temp{
   display: flex;
@@ -25,25 +38,54 @@
 
 }
 .table{
-  color:white;
+  color:#222;
+  background-color: white;
   font-size: 1em;
-  width:200px;
-  min-height:300px;
+  width:400px;
+  height:250px;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: baseline;
-  padding-left: 80px;
-  padding-top: 10px;
   padding-bottom: 20px;
-
+  flex-wrap: nowrap;
 }
-.row{
+.detailstitle{
   width:100%;
+  height: 200px;
+  padding-top:8px;
+  padding-bottom:13px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  font-size: 1.1em;
+  align-items: center;
+  font-weight: bold;
+}
+.rowA{
+  background-color: #f1f1f1;
+  color:#333;
+  width:100%;
+  height: 200px;
+  padding-top:8px;
+  padding-bottom:8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.rowB{
+  color:#333;
+  width:100%;
+  height: 200px;
+  display: flex;
+  padding-top:8px;
+  padding-bottom:8px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
 }
 .titol{
   font-size: 1.1em;
@@ -60,4 +102,29 @@
   justify-content: space-between;
   text-align: center;
   width: 200px;
+}
+.subcontentright{
+  width:700px;
+  height:100vh;
+  padding-top: 50px;
+  margin-left: 2%;
+
+}
+.mapa{
+  height:400px;
+  width:500px;
+  background-color: white;
+  padding: 2px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+  color:#222;
+}
+.mapa iframe{
+  height:100%;
+  width:100%;
+}
+.mapa span{
+  padding: 10px;
+  padding-top: 10px;
+  height:50px;
 }

@@ -1,14 +1,14 @@
 .fcontent{
-  margin-top: 50px;
   width:80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
+  padding-top: 50px;
 }
 .franjes{
   width:100%;
-  height:750px;
+  height:600px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

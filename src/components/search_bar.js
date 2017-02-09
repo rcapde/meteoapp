@@ -24,8 +24,6 @@ class SearchBar extends Component {
     this.props.fetchFranjes(this.state.term);
     this.props.fetchPrevisio(this.state.term);
 
-
-
     //this.props.currentWeather(this.state.term);
     this.setState({ term: '' });
   }

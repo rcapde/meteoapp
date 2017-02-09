@@ -21,7 +21,7 @@ export function fetchNow(city) {
 }
 
 export function fetchFranjes(city) {
-  const url = `${FRANJES_URL}&q=${city}&cnt=10&units=metric`;
+  const url = `${FRANJES_URL}&q=${city}&cnt=8&units=metric`;
   const request = axios.get(url);
 
   return {
@@ -30,7 +30,7 @@ export function fetchFranjes(city) {
   };
 }
 export function fetchPrevisio(city) {
-  const url = `${FRANJES_URL}&q=${city}&cnt=10&units=metric`;
+  const url = `${FRANJES_URL}&q=${city}&cnt=8&units=metric`;
   const request = axios.get(url);
 
   return {
